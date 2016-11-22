@@ -1,9 +1,8 @@
-<% content_for :page_title do %>
-   <%= Spree.t(:editing_resource) %>: <%= ERB.new(@blog_entry.title).result(binding).html_safe %>
-<% end %>
+<% admin_breadcrumb(link_to Spree.t('admin.tab.blog_entries'), admin_blog_entries_path) %>
+<% admin_breadcrumb(Spree.t('entry_details')) %>
 
 <% content_for :page_actions do %>
-<%= button_link_to Spree.t(:back_to_blog_list), spree.admin_blog_entries_url, :icon => 'arrow-left' %>
+  <%= button_link_to Spree.t(:back_to_blog_list), spree.admin_blog_entries_url, :icon => 'arrow-left' %>
 <% end %>
 
 <%= render "spree/shared/error_messages", :target => @blog_entry %>

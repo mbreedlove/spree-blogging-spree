@@ -32,13 +32,16 @@ en:
     visible: Visible
     author_id: Author
     tag_list: Tags
+    view_in_store: View In Store
     category_list: Categories
     nickname: Nickname
     website_url: Website URL
     google_plus_url: Google Plus URL
     bio_info: Biographical info
     blog: "Blog"
+    entry_details: "Entry Details"
     blog_entries: "Blog Entries"
+    back_to_blog_list: "Back to Blog List"
     new_blog_entry: "New Blog Entry"
     no_blog_entries: "No blog entries found."
     blog_entry_featured_image: Featured image
@@ -53,7 +56,7 @@ en:
     blog_author: Author
     admin:
       tab:
-        blog_entries: Blog entries
+        blog_entries: Blog Entries
     blog:
       ago: ago
       categories: Categories

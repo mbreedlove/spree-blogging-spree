@@ -1,9 +1,7 @@
-<% content_for :page_title do %>
-   <%= Spree.t(:blog_entries) %>
-<% end %>
+<% admin_breadcrumb(Spree.t('admin.tab.blog_entries')) %>
 
 <% content_for :page_actions do %>
-<%= button_link_to Spree.t(:new_blog_entry), new_object_url, :icon => 'plus', :class => 'btn-success' %>
+  <%= button_link_to Spree.t(:new_blog_entry), new_object_url, :class => 'btn-success' %>
 <% end %>
 
 <% if @blog_entries.any? %>
