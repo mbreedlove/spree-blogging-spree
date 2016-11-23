@@ -33,12 +33,10 @@
     <% unless Rails.env.test? %>
       <script>
         $("#blog_entry_tag_list").select2({
-          tags: <%= Spree::BlogEntry.tag_counts_on(:tags).map{|t| t.name }.to_json.html_safe %>,
-          width: '100%'
+          tags: <%= Spree::BlogEntry.tag_counts_on(:tags).map{|t| t.name }.to_json.html_safe %>
         });
         $("#blog_entry_category_list").select2({
-          tags: <%= Spree::BlogEntry.tag_counts_on(:categories).map{|t| t.name }.to_json.html_safe %>,
-          width: '100%'
+          tags: <%= Spree::BlogEntry.tag_counts_on(:categories).map{|t| t.name }.to_json.html_safe %>
         });
       </script>
     <% end %>
